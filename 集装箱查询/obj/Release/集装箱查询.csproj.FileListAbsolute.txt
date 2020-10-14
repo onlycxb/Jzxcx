@@ -1,0 +1,14 @@
+C:\Users\47020\Desktop\集装箱查询Code\集装箱查询\集装箱查询\bin\Release\集装箱查询.exe.config
+C:\Users\47020\Desktop\集装箱查询Code\集装箱查询\集装箱查询\bin\Release\集装箱查询.exe
+C:\Users\47020\Desktop\集装箱查询Code\集装箱查询\集装箱查询\bin\Release\集装箱查询.pdb
+C:\Users\47020\Desktop\集装箱查询Code\集装箱查询\集装箱查询\bin\Release\HtmlAgilityPack.dll
+C:\Users\47020\Desktop\集装箱查询Code\集装箱查询\集装箱查询\bin\Release\HtmlAgilityPack.pdb
+C:\Users\47020\Desktop\集装箱查询Code\集装箱查询\集装箱查询\bin\Release\HtmlAgilityPack.xml
+C:\Users\47020\Desktop\集装箱查询Code\集装箱查询\集装箱查询\obj\Release\集装箱查询.csprojAssemblyReference.cache
+C:\Users\47020\Desktop\集装箱查询Code\集装箱查询\集装箱查询\obj\Release\集装箱查询.FrmMain.resources
+C:\Users\47020\Desktop\集装箱查询Code\集装箱查询\集装箱查询\obj\Release\集装箱查询.Properties.Resources.resources
+C:\Users\47020\Desktop\集装箱查询Code\集装箱查询\集装箱查询\obj\Release\集装箱查询.csproj.GenerateResource.cache
+C:\Users\47020\Desktop\集装箱查询Code\集装箱查询\集装箱查询\obj\Release\集装箱查询.csproj.CoreCompileInputs.cache
+C:\Users\47020\Desktop\集装箱查询Code\集装箱查询\集装箱查询\obj\Release\集装箱查询.csproj.CopyComplete
+C:\Users\47020\Desktop\集装箱查询Code\集装箱查询\集装箱查询\obj\Release\集装箱查询.exe
+C:\Users\47020\Desktop\集装箱查询Code\集装箱查询\集装箱查询\obj\Release\集装箱查询.pdb
