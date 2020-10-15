@@ -1,16 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.IO.Compression;
-using System.Linq;
 using System.Net;
-using System.Net.Cache;
-using System.Net.Security;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 using System.Web;//添加引用
 
@@ -19,10 +12,12 @@ namespace 集装箱查询
     public class HttpService
     {
         public Action<List<Info>> showInfo;
+
         //查询结果集，用于绑定datagridView
         public List<Info> infoList = new List<Info>();
-        CookieContainer container = new CookieContainer();
-        string url = "https://www.hamburgsud-line.com/linerportal/pages/hsdg/tnt.xhtml";
+
+        private CookieContainer container = new CookieContainer();
+        private string url = "https://www.hamburgsud-line.com/linerportal/pages/hsdg/tnt.xhtml";
 
         /// <summary>
         /// 根据BLNo及开始和结束时间，查询详情
@@ -82,7 +77,6 @@ namespace 集装箱查询
             }
 
             return list;
-
         }
 
         /// <summary>
@@ -227,7 +221,6 @@ namespace 集装箱查询
             request.ContentType = "application/x-www-form-urlencoded; charset=UTF-8";
             //request.CachePolicy = new RequestCachePolicy(RequestCacheLevel.Default);
 
-
             if (refererUrl != null)
                 request.Referer = refererUrl;
             request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
@@ -252,8 +245,8 @@ namespace 集装箱查询
                 goto retry;
             }
         }
-
     }
+
     public class Info
     {
         public string BLNO { get; set; }
