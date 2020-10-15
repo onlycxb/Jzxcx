@@ -36,8 +36,12 @@ namespace 集装箱查询
             HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
             doc.LoadHtml(rsp);
 
-            var dateFrom = doc.DocumentNode.SelectSingleNode("//*[@id='j_idt6:searchForm:j_idt8:inputDateFrom_input']").GetAttributeValue("value", "");
-            var dateTo = doc.DocumentNode.SelectSingleNode("//*[@id='j_idt6:searchForm:j_idt8:inputDateTo_input']").GetAttributeValue("value", "");
+            //var dateFrom = doc.DocumentNode.SelectSingleNode("//*[@id='j_idt6:searchForm:j_idt8:inputDateFrom_input']").GetAttributeValue("value", "");
+            //var dateTo = doc.DocumentNode.SelectSingleNode("//*[@id='j_idt6:searchForm:j_idt8:inputDateTo_input']").GetAttributeValue("value", "");
+
+            var dateFrom = doc.DocumentNode.SelectSingleNode("//*[contains(@id,'inputDateFrom_input')]").GetAttributeValue("value", "");
+            var dateTo = doc.DocumentNode.SelectSingleNode("//*[contains(@id,'inputDateTo_input')]").GetAttributeValue("value", "");
+
             this.Text = $"集装箱查询【{dateFrom} 至 {dateTo}】";
 
             //查询blNO列表
