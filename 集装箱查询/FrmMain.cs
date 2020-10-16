@@ -36,9 +36,7 @@ namespace 集装箱查询
             HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
             doc.LoadHtml(rsp);
 
-            //var dateFrom = doc.DocumentNode.SelectSingleNode("//*[@id='j_idt6:searchForm:j_idt8:inputDateFrom_input']").GetAttributeValue("value", "");
-            //var dateTo = doc.DocumentNode.SelectSingleNode("//*[@id='j_idt6:searchForm:j_idt8:inputDateTo_input']").GetAttributeValue("value", "");
-
+            // 模糊查找起始和终止时间
             var dateFrom = doc.DocumentNode.SelectSingleNode("//*[contains(@id,'inputDateFrom_input')]").GetAttributeValue("value", "");
             var dateTo = doc.DocumentNode.SelectSingleNode("//*[contains(@id,'inputDateTo_input')]").GetAttributeValue("value", "");
 
